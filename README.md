@@ -1,2 +1,9 @@
 # play_note_sound
-A simple way to play tone of hymns
+
+## 使用方式
+
+請執行
+
+``` ps1
+cat play_note_sound/hymns/c758.json | play-note-sound
+```

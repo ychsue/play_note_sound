@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "play-note-sound"
+version = "0.1.0"
+description = "Play notes using sine waves from JSON input"
+authors = [
+    { name = "Copilot & Young-Chung Hsue"}
+]
+dependencies = [
+    "numpy",
+    "sounddevice"
+]
+
+
+[project.scripts] 
+play-note-sound = "play_note_sound.cli:main"
