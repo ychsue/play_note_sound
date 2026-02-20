@@ -1,5 +1,6 @@
 {
     "bpm": 120,
+    "transpose": "bm",
     "description": "台語詩歌88 但我要因耶和華歡喜 (哈巴谷書3:17-19)",
     "song":[
         {"note": "E3", "beats":0.5, "word": "無"},
