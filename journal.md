@@ -1,5 +1,10 @@
 # Journal
 
+## [2026-02-25] 在 VSCode 程式自動AI補齊與 Gemini 的幫忙下， html 的部分生出來了
+
+[docs 目錄](./docs/index.html)
+[與Gemini的對話](https://gemini.google.com/share/30106e8832b2)
+
 ## [2026-02-20] 經過 Gemini 的教學，了解小調等，已加入 `offset` 的概念
 
 ### Gemini 回答的一部份

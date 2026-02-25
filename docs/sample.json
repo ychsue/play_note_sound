@@ -1,0 +1,172 @@
+{
+    "bpm": 120,
+    "transpose": "bm",
+    "description": "台語詩歌88 但我要因耶和華歡喜 (哈巴谷書3:17-19)",
+    "song":[
+        {"note": "E3", "beats":0.5, "word": "無"},
+        {"note": "G3", "beats":0.5, "word": "花"},
+
+        {"note": "A3", "beats":1.5, "word":"果"},
+        {"note": "C4", "beats":0.5, "word":"樹"},
+        {"note": "B3", "beats":1.5, "word":"無"},
+        {"note": "G3", "beats":0.5, "word":"發"},
+
+        {"note": "E3", "beats":3, "word":"旺"},
+        {"note": "E3", "beats":0.5, "word":"葡"},
+        {"note": "G3", "beats":0.5, "word":"萄"},
+
+        {"note": "A3", "beats":1.5, "word": "樹"},
+        {"note": "C4", "beats":0.5, "word": "都"},
+        {"note": "D4", "beats":1, "word": "無"},
+        {"note": "C4", "beats":0.5, "word": "結"},
+        {"note": "D4", "beats":0.5},
+
+        {"note": "E4", "beats":3, "word": "果"},
+        {"note": "D4", "beats":0.5, "word": "橄"},
+        {"note": "E4", "beats":0.5, "word": "欖"},
+
+        {"note": "F4", "beats":1.5, "word": "樹"},
+        {"note": "F4", "beats":0.5, "word": "也"},
+        {"note": "E4", "beats":1, "word": "無"},
+        {"note": "C4", "beats":1, "word": "收"},
+
+        {"note": "A3", "beats":3, "word": "成"},
+        {"note": "D4", "beats":0.5, "word": "果"},
+        {"note": "C4", "beats":0.5, "word": "子"},
+
+        {"note": "B3", "beats":0.5, "word": "未"},
+        {"note": "B3", "beats":1.5, "word": "黃"},
+        {"note": "G3", "beats":1, "word": "落"},
+        {"note": "B3", "beats":1, "word": "滿"},
+
+        {"note": "A3", "beats":3, "word": "園。"},
+        {"note": "A3", "beats":0.5, "word": "田"},
+        {"note": "C4", "beats":0.5, "word": "裡"},
+
+        {"note": "D4", "beats":1, "word": "無"},
+        {"note": "C4", "beats":1, "word": "出"},
+        {"note": "D4", "beats":1, "word": "糧，"},
+        {"note": "C4", "beats":0.5, "word": "圈"},
+        {"note": "D4", "beats":0.5, "word": "中"},
+
+        {"note": "E4", "beats":1, "word": "絕"},
+        {"note": "G4", "beats":1, "word": "了"},
+        {"note": "E4", "beats":1, "word": "羊，"},
+        {"note": "E4", "beats":0.5, "word": "牛"},
+        {"note": "G4", "beats":0.5, "word": "棚"},
+
+        {"note": "A4", "beats":1, "word": "攏"},
+        {"note": "G4", "beats":1, "word": "空"},
+        {"note": "A4", "beats":1, "word": "空，"},
+        {"note": "G4", "beats":0.5, "word": "蜘"},
+        {"note": "E4", "beats":0.5, "word": "蛛"},
+
+        {"note": "D4", "beats":1, "word": "來"},
+        {"note": "E4", "beats":0.5, "word": "作"},
+        {"note": "D4", "beats":0.5, "word": "~"},
+        {"note": "D4", "beats":4, "word": "網"},
+        
+        {"note": "rest", "beats":0.5, "word": " "},
+        {"note": "E4", "beats":0.5, "word": "但"},
+        {"note": "C5", "beats":0.5, "word": "我"},
+        {"note": "B4", "beats":0.5, "word": "要"},
+
+        {"note": "A4", "beats":1, "word": "因"},
+        {"note": "A4", "beats":0.5, "word": "耶"},
+        {"note": "G4", "beats":0.5, "word": "和"},
+        {"note": "E4", "beats":1, "word": "華"},
+        {"note": "G4", "beats":1, "word": "歡"},
+
+        {"note": "A4", "beats":2, "word": "喜，"},
+        {"note": "rest", "beats":0.5, "word": " "},
+        {"note": "E4", "beats":0.5, "word": "我"},
+        {"note": "A4", "beats":0.5, "word": "因"},
+        {"note": "G4", "beats":0.5, "word": "救"},
+
+        {"note": "E4", "beats":1, "word": "主"},
+        {"note": "E4", "beats":0.5, "word": "我"},
+        {"note": "D4", "beats":0.5, "word": "的"},
+        {"note": "C4", "beats":1, "word": "神"},
+        {"note": "A3", "beats":0.5, "word": "喜"},
+        {"note": "E4", "beats":0.5, "word": "~"},
+
+        {"note": "D4", "beats":3, "word": "樂"},
+        {"note": "rest", "beats":1, "word": " "},
+        
+        {"note": "D4", "beats":1, "word": "祂"},
+        {"note": "C4", "beats":0.5, "word": "使"},
+        {"note": "D4", "beats":0.5, "word": "我"},
+        {"note": "E4", "beats":1, "word": "像"},
+        {"note": "D4", "beats":0.5, "word": "羚"},
+        {"note": "E4", "beats":0.5, "word": "鹿"},
+
+        {"note": "G4", "beats":1, "word": "盤"},
+        {"note": "E4", "beats":0.5, "word": "山"},
+        {"note": "G4", "beats":0.5, "word": "過"},
+        {"note": "A4", "beats":2, "word": "嶺，"},
+        
+        {"note": "B4", "beats":1, "word": "又"},
+        {"note": "B4", "beats":0.5, "word": "使"},
+        {"note": "A4", "beats":0.5, "word": "我"},
+        {"note": "G4", "beats":1, "word": "像"},
+        {"note": "E4", "beats":0.5, "word": "鷹"},
+        {"note": "G4", "beats":0.5, "word": "四"},
+
+        {"note": "B4", "beats":0.5, "word": "界"},
+        {"note": "A4", "beats":0.5, "word": "~"},
+        {"note": "G4", "beats":1, "word": "飛"},
+        {"note": "A4", "beats":4, "word": "行。"},
+
+        {"note": "rest", "beats":0.5, "word": " "},
+        {"note": "E4", "beats":0.5, "word": "但"},
+        {"note": "C5", "beats":0.5, "word": "我"},
+        {"note": "B4", "beats":0.5, "word": "要"},
+
+        {"note": "A4", "beats":1, "word": "因"},
+        {"note": "A4", "beats":0.5, "word": "耶"},
+        {"note": "G4", "beats":0.5, "word": "和"},
+        {"note": "E4", "beats":1, "word": "華"},
+        {"note": "G4", "beats":1, "word": "歡"},
+
+        {"note": "A4", "beats":2, "word": "喜，"},
+        {"note": "rest", "beats":0.5, "word": " "},
+        {"note": "E4", "beats":0.5, "word": "我"},
+        {"note": "A4", "beats":0.5, "word": "因"},
+        {"note": "G4", "beats":0.5, "word": "救"},
+
+        {"note": "E4", "beats":1, "word": "主"},
+        {"note": "E4", "beats":0.5, "word": "我"},
+        {"note": "D4", "beats":0.5, "word": "的"},
+        {"note": "C4", "beats":1, "word": "神"},
+        {"note": "A3", "beats":0.5, "word": "喜"},
+        {"note": "E4", "beats":0.5, "word": "~"},
+
+        {"note": "D4", "beats":3, "word": "樂，"},
+        {"note": "rest", "beats":1, "word": " "},
+
+        {"note": "D4", "beats":1, "word": "耶"},
+        {"note": "C4", "beats":0.5, "word": "和"},
+        {"note": "D4", "beats":0.5, "word": "華"},
+        {"note": "E4", "beats":1, "word": "是"},
+        {"note": "D4", "beats":0.5, "word": "我"},
+        {"note": "E4", "beats":0.5, "word": "心"},
+
+        {"note": "G4", "beats":1, "word": "中"},
+        {"note": "E4", "beats":0.5, "word": "的"},
+        {"note": "G4", "beats":0.5, "word": "力"},
+        {"note": "A4", "beats":2, "word": "量，"},
+
+        {"note": "B4", "beats":1, "word": "我"},
+        {"note": "B4", "beats":0.5, "word": "一"},
+        {"note": "A4", "beats":0.5, "word": "生"},
+        {"note": "G4", "beats":1, "word": "要"},
+        {"note": "E4", "beats":0.5, "word": "向"},
+        {"note": "G4", "beats":0.5, "word": "祂"},
+
+        {"note": "B4", "beats":0.5, "word": "來"},
+        {"note": "A4", "beats":0.5, "word": "~"},
+        {"note": "G4", "beats":1, "word": "歌"},
+        {"note": "A4", "beats":4, "word": "頌。"},
+        {"note": "rest", "beats":1, "word": " "}
+    ]
+}
