@@ -20,6 +20,22 @@ function getJsonFile(input) {
   };
 }
 
+function loadSampleJson() {
+    // 由 sample.json 讀取範例資料
+    fetch("sample.json")
+        .then(response => response.json())
+        .then(json => {
+            document.getElementById("jsonSummary").value =
+                `曲名：${json.description || "未命名"}\nBPM: ${json.bpm}\n音符總數: ${json.song.length}`;
+            document.getElementById("playButton").disabled = false;
+            document.getElementById("status").innerText = "範例樂譜載入成功！";
+            window.currentSongData = json; // 同樣存到變數中
+        })
+        .catch(() => {
+            alert("無法載入範例樂譜！");
+        });
+}
+
 function playMusic(json) {
   // 確保 AudioContext 已啟動 (瀏覽器安全要求)
   if (audioCtx.state === "suspended") {
