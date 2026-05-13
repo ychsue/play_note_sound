@@ -63,10 +63,12 @@ function renderLyricsTrack(json) {
 }
 
 /** 核心播放控制 */
-function handlePlay() {
+async function handlePlay() {
     if (isPlaying || !window.currentSongData) return;
     
-    if (audioCtx.state === "suspended") audioCtx.resume();
+    if (audioCtx.state === "suspended") {
+      await audioCtx.resume();
+    }
     
     isPlaying = true;
     const json = window.currentSongData;
@@ -142,8 +144,8 @@ function updateScroll(elapsedSeconds) {
     const pixelOffset = beatsElapsed * PIXELS_PER_BEAT;
     
     const trackEl = document.getElementById('lyrics-track');
-    // 讓目前播放的位置始終在正中間 (負號是因為軌道向左移)
-    trackEl.style.transform = `translateX(${-pixelOffset}px)`;
+    // 使用 Math.round 或 Math.floor 取整，並改用 translate3d 開啟硬體加速
+    trackEl.style.transform = `translate3d(${-Math.round(pixelOffset)}px, 0, 0)`;
 
     // 高亮目前的字
     const spans = trackEl.querySelectorAll('.note-item');
