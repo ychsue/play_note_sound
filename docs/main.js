@@ -160,6 +160,36 @@ function updateScroll(elapsedSeconds) {
     });
 }
 
+/** 切換模式 */
+function toggleEditMode() {
+  const isEditMode = document.getElementById("modeSwitch").checked;
+  const summaryEl = document.getElementById("jsonSummary");
+  const editorEl = document.getElementById("jsonEditor");
+
+  if (isEditMode) {
+    summaryEl.style.display = "none";
+    editorEl.style.display = "block";
+    // 將當前資料轉成漂亮格式的 JSON 填入編輯區
+    if (window.currentSongData) {
+      editorEl.value = JSON.stringify(window.currentSongData, null, 2);
+    }
+  } else {
+    summaryEl.style.display = "block";
+    editorEl.style.display = "none";
+    // 切換回摘要時，嘗試解析編輯區的內容並同步回記憶體
+    try {
+      if (editorEl.value) {
+        window.currentSongData = JSON.parse(editorEl.value);
+        updateSummary(window.currentSongData);
+      }
+    } catch (e) {
+      alert("JSON 格式有誤，請檢查後再切換！");
+      document.getElementById("modeSwitch").checked = true; // 強制留點編輯模式
+      toggleEditMode();
+    }
+  }
+}
+
 function updateSummary(json) {
     document.getElementById("jsonSummary").value =
         `曲名：${json.description || "未命名"}\nBPM: ${json.bpm}\n音符總數: ${json.song.length}`;
