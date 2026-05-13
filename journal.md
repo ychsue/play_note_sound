@@ -1,5 +1,9 @@
 # Journal
 
+## [2026-05-13] 在 Gemini 的幫忙下，加入了跑馬燈的功能
+
+[與 Gemini 的對話](discussions\running_horse.md)
+
 ## [2026-02-25] 在 VSCode 程式自動AI補齊與 Gemini 的幫忙下， html 的部分生出來了
 
 [docs 目錄](./docs/index.html)

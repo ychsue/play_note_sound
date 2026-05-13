@@ -1,3 +1,4 @@
+// music_core.js (修改版)
 const SEMITONE_MAP = {
     "C": 0, "C#": 1, "Db": 1, "D": 2, "D#": 3, "Eb": 3,
     "E": 4, "F": 5, "F#": 6, "Gb": 6, "G": 7, "G#": 8,
@@ -26,25 +27,40 @@ function getFrequency(noteName, offset = 0) {
 }
 
 const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+let activeNodes = []; // 用於追蹤所有正在排程中的 oscillator
 
 // 支援精確排程的版本
 function playNoteAt(frequency, duration, startTime) {
     const oscillator = audioCtx.createOscillator();
     const gainNode = audioCtx.createGain();
 
-    oscillator.type = 'triangle'; // 改用 triangle 聽起來比較像吉他/樂器，不那麼刺耳
+    oscillator.type = 'triangle';
     oscillator.frequency.setValueAtTime(frequency, startTime);
 
     // 音量控制 (Envelope)
     gainNode.gain.setValueAtTime(0, startTime);
-    gainNode.gain.linearRampToValueAtTime(0.3, startTime + 0.02); // 快速淡入
-    gainNode.gain.exponentialRampToValueAtTime(0.0001, startTime + duration); // 淡出
+    gainNode.gain.linearRampToValueAtTime(0.3, startTime + 0.02);
+    gainNode.gain.exponentialRampToValueAtTime(0.0001, startTime + duration);
 
     oscillator.connect(gainNode);
     gainNode.connect(audioCtx.destination);
 
     oscillator.start(startTime);
     oscillator.stop(startTime + duration);
+
+    // 存入追蹤清單
+    activeNodes.push(oscillator);
+    oscillator.onended = () => {
+        activeNodes = activeNodes.filter(n => n !== oscillator);
+    };
+}
+
+/** 停止所有正在發出的聲音 */
+function stopAllNotes() {
+    activeNodes.forEach(node => {
+        try { node.stop(); } catch(e) {}
+    });
+    activeNodes = [];
 }
 
 function beatsToSeconds(beats, bpm) {
