@@ -71,6 +71,61 @@ function applySongData(json, options = {}) {
     }
 }
 
+function noteToJianpu(noteName) {
+    if (!noteName || noteName === 'rest') {
+        return '0';
+    }
+
+    const match = /^([A-Ga-g][#b]?)(-?\d+)$/.exec(String(noteName).trim());
+    if (!match) {
+        return noteName;
+    }
+
+    const pitchRaw = match[1];
+    const octave = Number(match[2]);
+    const pitchClass = pitchRaw[0].toUpperCase() + (pitchRaw[1] || '');
+
+    const sharpMap = {
+        C: '1', 'C#': '#1', D: '2', 'D#': '#2', E: '3',
+        F: '4', 'F#': '#4', G: '5', 'G#': '#5', A: '6', 'A#': '#6', B: '7'
+    };
+    const flatMap = {
+        C: '1', Db: 'b2', D: '2', Eb: 'b3', E: '3',
+        F: '4', Gb: 'b5', G: '5', Ab: 'b6', A: '6', Bb: 'b7', B: '7'
+    };
+
+    const useFlat = pitchClass.includes('b');
+    const degree = (useFlat ? flatMap[pitchClass] : sharpMap[pitchClass]) || sharpMap[pitchClass] || pitchClass;
+
+    const octaveDiff = octave - 4;
+    const octaveMarks = octaveDiff > 0
+        ? "'".repeat(octaveDiff)
+        : ','.repeat(Math.abs(octaveDiff));
+
+    return `${degree}${octaveMarks}`;
+}
+
+function beatsToJianpuMark(beats) {
+    const value = Number(beats);
+    if (!Number.isFinite(value) || value <= 0) {
+        return '';
+    }
+
+    // 以 1 拍當基準: 長於 1 拍用 '-'，短於 1 拍用 '_'，附點用 '.'
+    if (value >= 1) {
+        const whole = Math.floor(value);
+        const frac = Number((value - whole).toFixed(2));
+        const dashes = whole > 1 ? '-'.repeat(whole - 1) : '';
+        const dot = Math.abs(frac - 0.5) < 0.01 ? '.' : '';
+        return `${dashes}${dot}`;
+    }
+
+    if (Math.abs(value - 0.5) < 0.01) return '_';
+    if (Math.abs(value - 0.25) < 0.01) return '__';
+    if (Math.abs(value - 0.75) < 0.01) return '_.';
+    return `/${value}`;
+}
+
 /** 渲染歌詞軌道 */
 function renderLyricsTrack(json) {
     const trackEl = document.getElementById('lyrics-track');
@@ -81,7 +136,21 @@ function renderLyricsTrack(json) {
     json.song.forEach((item, index) => {
         const span = document.createElement('span');
         span.className = 'note-item';
-        span.innerText = item.word || (item.note === 'rest' ? ' ' : '♪');
+
+        const mainWord = document.createElement('span');
+        mainWord.className = 'note-word';
+        mainWord.innerText = item.word || (item.note === 'rest' ? '休' : '♪');
+
+        const noteName = item.note || 'rest';
+        const beatsValue = Number(item.beats) || 0;
+        const jianpu = noteToJianpu(noteName);
+        const durationMark = beatsToJianpuMark(beatsValue);
+        const subMeta = document.createElement('span');
+        subMeta.className = 'note-meta';
+        subMeta.innerText = `${jianpu}${durationMark ? ` ${durationMark}` : ''} | ${beatsValue}拍`;
+
+        span.appendChild(mainWord);
+        span.appendChild(subMeta);
         
         // 寬度正比於拍數
         const width = item.beats * PIXELS_PER_BEAT;
