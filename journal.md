@@ -1,5 +1,9 @@
 # Journal
 
+## [2026-06-11] 在 GitHub Copilot 的幫助下，修正JSON與 Play 之間的對應關係
+
+[與 GitHub Copilot 的對話](discussions\copilot.md)
+
 ## [2026-05-13] 在 Gemini 的幫忙下，加入了跑馬燈的功能
 
 [與 Gemini 的對話](discussions\running_horse.md)

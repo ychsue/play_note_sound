@@ -1,0 +1,146 @@
+{
+    "bpm": 80,
+    "transpose": "C",
+    "description": "台語詩歌 123. 對萬民來作見證",
+    "song": [
+        {"note": "E6", "beats": 1, "word": " "},
+        {"note": "C6", "beats": 0.5, "word": " "},
+        {"note": "B5", "beats": 0.5, "word": " "},
+        {"note": "A5", "beats": 2, "word": " "},
+        {"note": "A5", "beats": 2, "word": " "},
+
+        {"note": "E5", "beats": 2, "word": "因"},
+
+        {"note": "E5", "beats": 1, "word": "為"},
+        {"note": "E5", "beats": 1, "word": "這"},
+
+        {"note": "F5", "beats": 0.5, "word": "國"},
+        {"note": "E5", "beats": 0.5, "word": "~"},
+        {"note": "A5", "beats": 0.5, "word": "度"},
+        {"note": "B5", "beats": 0.5, "word": "~"},
+
+        {"note": "C6", "beats": 0.5, "word": "福"},
+        {"note": "B5", "beats": 0.5, "word": "~"},
+        {"note": "A5", "beats": 1, "word": "音"},
+
+        {"note": "C6", "beats": 1, "word": "欲"},
+        {"note": "C6", "beats": 0.5, "word": "傳"},
+        {"note": "B5", "beats": 0.5, "word": "~"},
+
+        {"note": "A5", "beats": 0.5, "word": "遍"},
+        {"note": "F6", "beats": 0.5, "word": "~"},
+        {"note": "F6", "beats": 0.5, "word": "天"},
+        {"note": "E6", "beats": 0.25, "word": "~"},
+        {"note": "F6", "beats": 0.25, "word": "~"},
+
+        {"note": "E6", "beats": 4, "word": "下"},
+
+        {"note": "rest", "beats": 0.5, "word": " "},
+        {"note": "C6", "beats": 0.5, "word": "對"},
+        {"note": "C6", "beats": 0.5, "word": "萬"},
+        {"note": "C6", "beats": 0.5, "word": "民"},
+
+        {"note": "C6", "beats": 1, "word": "來"},
+        {"note": "B5", "beats": 0.5, "word": "作"},
+        {"note": "C6", "beats": 0.5, "word": "~"},
+
+        {"note": "E6", "beats": 1.5, "word": "見"},
+        {"note": "C6", "beats": 0.25, "word": "~"},
+        {"note": "B5", "beats": 0.25, "word": "~"},
+
+        {"note": "A5", "beats": 2, "word": "證，"},
+
+        {"note": "E5", "beats": 1, "word": "末"},
+        {"note": "E5", "beats": 0.5, "word": "期"},
+        {"note": "A5", "beats": 0.5, "word": "~"},
+
+        {"note": "C6", "beats": 1, "word": "才"},
+        {"note": "B5", "beats": 0.5, "word": "來"},
+        {"note": "C6", "beats": 0.25, "word": "~"},
+        {"note": "B5", "beats": 0.25, "word": "~"},
+
+        {"note": "A5", "beats": 2, "word": "到"},
+
+        {"note": "A5", "beats": 2, "word": "，"},
+
+        {"note": "rest", "beats": 0.5, "word": "所"},
+        {"note": "A5", "beats": 0.5, "word": "~"},
+        {"note": "A5", "beats": 0.5, "word": "以"},
+        {"note": "A5", "beats": 0.5, "word": "咱"},
+
+        {"note": "C6", "beats": 0.5, "word": "著"},
+        {"note": "B5", "beats": 0.5, "word": "用"},
+        {"note": "A5", "beats": 0.5, "word": "智"},
+        {"note": "C6", "beats": 0.5, "word": "慧"},
+
+        {"note": "B5", "beats": 0.5, "word": "咱"},
+        {"note": "A5", "beats": 0.25, "word": "著"},
+        {"note": "F5", "beats": 0.25, "word": "~"},
+        {"note": "C5", "beats": 0.5, "word": "用"},
+        {"note": "E5", "beats": 0.25, "word": "智"},
+        {"note": "F5", "beats": 0.25, "word": "~"},
+
+        {"note": "E5", "beats": 2, "word": "慧"},
+
+        {"note": "A5", "beats": 1, "word": "互"},
+        {"note": "A5", "beats": 0.5, "word": "基"},
+        {"note": "A5", "beats": 1, "word": "督"},
+
+        {"note": "A5", "beats": 0.5, "word": "的"},
+        {"note": "F5", "beats": 0.5, "word": "話"},
+        {"note": "E5", "beats": 0.5, "word": "語"},
+
+        {"note": "A5", "beats": 0.5, "word": "豐"},
+        {"note": "B5", "beats": 0.5, "word": "~"},
+        {"note": "C6", "beats": 0.5, "word": "豐"},
+        {"note": "E6", "beats": 0.25, "word": "富"},
+        {"note": "F6", "beats": 0.25, "word": "~"},
+
+        {"note": "E6", "beats": 0.5, "word": "富"},
+        {"note": "C6", "beats": 0.5, "word": "~"},
+        {"note": "E6", "beats": 1.5, "word": "的"},
+
+        {"note": "F6", "beats": 1, "word": "惦"},
+        {"note": "E6", "beats": 0.5, "word": "佇"},
+
+        {"note": "F6", "beats": 1, "word": "咱"},
+        {"note": "E6", "beats": 0.5, "word": "裡"},
+        {"note": "C6", "beats": 0.5, "word": "~"},
+
+        {"note": "E6", "beats": 1, "word": "面"},
+        {"note": "E6", "beats": 0.5, "word": " "},
+        {"note": "F6", "beats": 0.5, "word": " "},
+
+        {"note": "rest", "beats": 0.5, "word": " "},
+        {"note": "C6", "beats": 1, "word": "啊"},
+        {"note": "B5", "beats": 0.5, "word": "~"},
+
+        {"note": "C6", "beats": 1.5, "word": "~"},
+        {"note": "B5", "beats": 0.5, "word": "~"},
+
+        {"note": "C6", "beats": 0.5, "word": "豐"},
+        {"note": "E6", "beats": 0.5, "word": "~"},
+        {"note": "E6", "beats": 1, "word": "豐"},
+
+        {"note": "E6", "beats": 1, "word": "富"},
+        {"note": "C6", "beats": 0.25, "word": "富"},
+        {"note": "E6", "beats": 0.25, "word": "~"},
+        {"note": "C6", "beats": 0.25, "word": "~"},
+        {"note": "B5", "beats": 0.25, "word": "~"},
+
+        {"note": "A5", "beats": 1, "word": "的"},
+        {"note": "E5", "beats": 1, "word": "惦"},
+
+        {"note": "C6", "beats": 1.5, "word": "佇"},
+        {"note": "B5", "beats": 0.25, "word": "~"},
+        {"note": "E6", "beats": 0.25, "word": "~"},
+
+        {"note": "E6", "beats": 1, "word": "咱"},
+        {"note": "C6", "beats": 0.25, "word": "裡"},
+        {"note": "E6", "beats": 0.25, "word": "~"},
+        {"note": "C6", "beats": 0.25, "word": "~"},
+        {"note": "B5", "beats": 0.25, "word": "~"},
+
+        {"note": "A5", "beats": 4, "word": "面"}
+    ]
+}

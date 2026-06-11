@@ -32,6 +32,45 @@ function loadSampleJson() {
         .then(json => onDataLoaded(json));
 }
 
+function getSongDurationSeconds(json) {
+    const bpm = Number(json?.bpm) || 120;
+    const song = Array.isArray(json?.song) ? json.song : [];
+    return song.reduce((sum, item) => sum + beatsToSeconds(Number(item.beats) || 0, bpm), 0);
+}
+
+function applySongData(json, options = {}) {
+    const { preservePosition = true } = options;
+
+    if (!json || !Array.isArray(json.song)) {
+        throw new Error("JSON 缺少 song 陣列");
+    }
+
+    if (!json.bpm || Number(json.bpm) <= 0) {
+        json.bpm = 120;
+    }
+
+    const wasPlaying = isPlaying;
+    const currentPosition = preservePosition
+        ? (wasPlaying ? (audioCtx.currentTime - startTime) : pausedAtSeconds)
+        : 0;
+
+    if (wasPlaying) {
+        handlePause();
+    }
+
+    window.currentSongData = json;
+    updateSummary(json);
+    renderLyricsTrack(json);
+
+    const duration = getSongDurationSeconds(json);
+    pausedAtSeconds = Math.min(Math.max(currentPosition, 0), duration);
+    updateScroll(pausedAtSeconds);
+
+    if (wasPlaying) {
+        handlePlay();
+    }
+}
+
 /** 渲染歌詞軌道 */
 function renderLyricsTrack(json) {
     const trackEl = document.getElementById('lyrics-track');
@@ -139,7 +178,7 @@ function updateScroll(elapsedSeconds) {
     const json = window.currentSongData;
     if (!json) return;
     
-    const bpm = json.bpm;
+    const bpm = Number(json.bpm) || 120;
     const beatsElapsed = elapsedSeconds * (bpm / 60);
     const pixelOffset = beatsElapsed * PIXELS_PER_BEAT;
     
@@ -179,8 +218,9 @@ function toggleEditMode() {
     // 切換回摘要時，嘗試解析編輯區的內容並同步回記憶體
     try {
       if (editorEl.value) {
-        window.currentSongData = JSON.parse(editorEl.value);
-        updateSummary(window.currentSongData);
+                const parsed = JSON.parse(editorEl.value);
+                applySongData(parsed, { preservePosition: true });
+                document.getElementById("status").innerText = "已套用編輯內容";
       }
     } catch (e) {
       alert("JSON 格式有誤，請檢查後再切換！");

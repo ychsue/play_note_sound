@@ -1,0 +1,112 @@
+{
+    "bpm": 80,
+    "transpose": "Ab",
+    "description": "台語詩歌 「因信」得永遠活命 (精確對齊版)",
+    "song": [
+        {"note": "Eb5", "beats": 1.5, "word": "接"},
+        {"note": "F5", "beats": 0.5, "word": "~"},
+        {"note": "Eb5", "beats": 0.5, "word": "受"},
+        {"note": "C5", "beats": 0.5, "word": "~"},
+        {"note": "Eb5", "beats": 0.5, "word": "主"},
+        {"note": "F5", "beats": 0.5, "word": "~"},
+
+        {"note": "Ab5", "beats": 1.5, "word": "耶"},
+        {"note": "F5", "beats": 0.5, "word": "~"},
+        {"note": "Eb5", "beats": 2.0, "word": "穌"},
+
+        {"note": "C6", "beats": 2.0, "word": "就"},
+        {"note": "C6", "beats": 0.5, "word": "欲"},
+        {"note": "Bb5", "beats": 0.5, "word": "~"},
+        {"note": "Ab5", "beats": 1.0, "word": "信，"},
+
+        {"note": "Bb5", "beats": 1.0, "word": "就"},
+        {"note": "Bb5", "beats": 1.0, "word": "欲"},
+        {"note": "Bb5", "beats": 1.0, "word": "信"},
+        {"note": "C6", "beats": 0.5, "word": "~"},
+        {"note": "Bb5", "beats": 0.5, "word": "~"},
+
+        {"note": "Bb5", "beats": 4.0, "word": "入，"},
+
+        {"note": "Eb6", "beats": 2.0, "word": "信"},
+        {"note": "C6", "beats": 1.0, "word": "入"},
+        {"note": "Bb5", "beats": 1.0, "word": "~"},
+
+        {"note": "Ab5", "beats": 1.5, "word": "主"},
+        {"note": "Ab5", "beats": 0.5, "word": "耶"},
+        {"note": "Ab5", "beats": 1.0, "word": "穌"},
+        {"note": "Bb5", "beats": 0.5, "word": "~"},
+        {"note": "C6", "beats": 0.5, "word": "~"},
+
+        {"note": "C6", "beats": 1.0, "word": "神"},
+        {"note": "Bb5", "beats": 0.5, "word": "就"},
+        {"note": "Ab5", "beats": 0.5, "word": "~"},
+        {"note": "F5", "beats": 1.0, "word": "賜"},
+        {"note": "F5", "beats": 0.5, "word": "給"},
+        {"note": "Eb5", "beats": 0.25, "word": "~"},
+        {"note": "F5", "beats": 0.25, "word": "~"},
+
+        {"note": "Eb5", "beats": 4.0, "word": "我"},
+
+        {"note": "C5", "beats": 1.5, "word": "神"},
+        {"note": "Eb5", "beats": 0.5, "word": "~"},
+        {"note": "C5", "beats": 0.5, "word": "賜"},
+        {"note": "Bb4", "beats": 0.5, "word": "~"},
+        {"note": "Ab4", "beats": 0.5, "word": "我"},
+        {"note": "Bb4", "beats": 0.5, "word": "~"},
+
+        {"note": "C5", "beats": 1.0, "word": "權"},
+        {"note": "Eb5", "beats": 0.5, "word": "~"},
+        {"note": "F5", "beats": 0.5, "word": "~"},
+        {"note": "Eb5", "beats": 1.5, "word": "柄，"},
+        {"note": "F5", "beats": 0.5, "word": "~"},
+
+        {"note": "Ab5", "beats": 1.0, "word": "晟"},
+        {"note": "Ab5", "beats": 1.0, "word": "作"},
+        {"note": "F5", "beats": 0.5, "word": "神"},
+        {"note": "Eb5", "beats": 0.5, "word": "~"},
+        {"note": "F5", "beats": 1.0, "word": "子"},
+
+        {"note": "Eb5", "beats": 4.0, "word": "兒"},
+
+        {"note": "rest", "beats": 1.0, "word": " "},
+        {"note": "C5", "beats": 1.0, "word": "晟"},
+        {"note": "Eb5", "beats": 1.0, "word": "作"},
+        {"note": "F5", "beats": 0.5, "word": "~"},
+        {"note": "Ab5", "beats": 0.5, "word": "~"},
+
+        {"note": "Ab5", "beats": 1.5, "word": "神"},
+        {"note": "Bb5", "beats": 0.5, "word": "子"},
+        {"note": "C6", "beats": 1.0, "word": "兒"},
+        {"note": "Eb6", "beats": 1.0, "word": "，"},
+
+        {"note": "Eb6", "beats": 1.5, "word": "永"},
+        {"note": "Eb6", "beats": 0.5, "word": "遠"},
+        {"note": "C6", "beats": 0.5, "word": "得"},
+        {"note": "Bb5", "beats": 0.5, "word": "~"},
+        {"note": "Ab5", "beats": 1.0, "word": "活"},
+
+        {"note": "Bb5", "beats": 4.0, "word": "命"},
+
+        {"note": "Eb6", "beats": 2.0, "word": "得"},
+        {"note": "C6", "beats": 0.5, "word": "活"},
+        {"note": "Bb5", "beats": 0.5, "word": "~"},
+        {"note": "Ab5", "beats": 0.5, "word": "命"},
+        {"note": "Bb5", "beats": 0.5, "word": "~"},
+
+        {"note": "C6", "beats": 1.0, "word": "欲"},
+        {"note": "C6", "beats": 0.5, "word": "得"},
+        {"note": "C6", "beats": 0.5, "word": "活"},
+        {"note": "C6", "beats": 2.0, "word": "命"},
+
+        {"note": "Eb5", "beats": 0.5, "word": "我"},
+        {"note": "F5", "beats": 0.5, "word": "~"},
+        {"note": "F5", "beats": 0.5, "word": "欲"},
+        {"note": "Eb5", "beats": 0.5, "word": "得"},
+        {"note": "C6", "beats": 1.0, "word": "活"},
+        {"note": "Bb5", "beats": 0.5, "word": "~"},
+        {"note": "Ab5", "beats": 0.25, "word": "~"},
+        {"note": "Bb5", "beats": 0.25, "word": "~"},
+
+        {"note": "Ab5", "beats": 4.0, "word": "命"}
+    ]
+}
